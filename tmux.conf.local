@@ -1,0 +1,22 @@
+bind-key : command-prompt
+bind-key r refresh-client
+bind-key L clear-history
+
+bind-key [ copy-mode
+bind-key ] paste-buffer
+
+# more intuitive keybindings for splitting
+bind \ split-window -h
+bind - split-window -v
+
+# Status bar
+set -g status-utf8 on
+set -g status-bg '#ffffff'
+set -g status-fg '#8e908c'
+
+set-window-option -g window-status-fg '#8e908c'
+set-window-option -g window-status-current-fg '#ffffff'
+set-window-option -g window-status-current-bg '#cc6666'
+
+# show session name, window and pane on the right side
+set -g status-right '#[fg=#cc6666,bold]#S #[default,bold]#I:#P'
