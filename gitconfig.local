@@ -1,0 +1,10 @@
+[user]
+  name = Gertjan Reynaert
+  email = gertjan@typework.com
+[alias]
+  l = !git log --graph --pretty=colored
+  cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
+[pretty]
+  colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
+[credential]
+  helper = osxkeychain

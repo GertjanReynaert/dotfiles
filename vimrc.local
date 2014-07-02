@@ -1,91 +1,87 @@
 " Highlight current line
-" set cursorline
-"
-" " Relative line numbers
+set cursorline
+
+" Relative line numbers
 " set relativenumber
-"
-" " Make it obvious where 80 characters is
-" set textwidth=80
-" set colorcolumn=+1
-" highlight ColorColumn ctermbg=7
-"
-" " Highlight all matches after entering search pattern
-" set hlsearch
-"
-" " Automatically update file unless buffer has unsaved changes
-" set autoread
-"
-" " Case insensitive pattern matching
-" set ignorecase
-"
-" " Overrides ignorecase if pattern contains upcase
-" set smartcase
-"
-" " When at 3 spaces and I hit >>, go to 4, not 5
-" set shiftround
-"
-" " Keep 5 lines of context when scrolling
-" set scrolloff=5
-"
-" " Don't add the comment prefix when I hit enter or o/O on a comment line.
-" autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-"
-" " Move one displayed line at a time, default is one fysical line
-" nmap k gk
-" nmap j gj
-"
-" " Bind K to grep word under cursor
-" nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
-"
-" " Bind \ (backward slash) to grep shortcut
-" command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
-" nnoremap \ :Ag<SPACE>
-"
-" " Disable Ex mode
-" map Q <Nop>
-"
-" " Allow undo history to persist after closing buffer
-" if has('persistent_undo')
-"   set undodir=~/.vim/_undo
-"     set undofile
-"     end
-"
-"     " Shortcuts
-"     map <C-t> <esc>:tabnew<CR>
-"     map <C-s> <esc>:w<CR>
-"     imap <C-s> <esc>:w<CR>
-"
-"     " Toggle NERDtree
-"     map <C-n> :NERDTreeToggle<CR>
-"
-"     " Embrace typos
-"     command! Q q
-"     command! W w
-"     command! Wq wq
-"
-"     " Tell NERD tree which files to ignore
-"     let NERDTreeIgnore=['\~$', '\.pyc', '\.swp$', '\.git',
-"           \ 'node_modules', '^tmp$', '^log$', '^dist$',
-"                 \ '\coverage$', '\.DS_Store$', '\.tmp$', '\.gitkeep$']
-"
-"                 " Tell Netrw which files to ignore
-"                 let g:netrw_list_hide= '.*\.swp$,'
-"                 let g:netrw_list_hide.= '\.git,\.gitkeep,\.keep,'
-"                 let g:netrw_list_hide.= 'node_modules,'
-"                 let g:netrw_list_hide.= '\.gem,\.bundle,'
-"                 let g:netrw_list_hide.= '\.DS_Store,'
-"                 let g:netrw_list_hide.= 'tmp,dist,log,coverage'
-"
-"                 set
-"                 wildignore=log/**,node_modules/**,target/**,tmp/**,dist/**,*.rbc
-"                 set
-"                 wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
-"                 set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
-"                 set
-"                 wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
-"                 set wildignore+=*.swp,*~,._*
-"
-"                 " Extra filetypes
-"                 au BufRead,BufNewFile *.es6 set filetype=javascript
-"                 au BufRead,BufNewFile *.{mustache,handlebars,hbs}{,.erb} set
-"                 filetype=html syntax=mustache
+
+" Make it obvious where 80 characters is
+set textwidth=80
+set colorcolumn=+1
+highlight ColorColumn ctermbg=7
+
+" Highlight all matches after entering search pattern
+set hlsearch
+
+" Automatically update file unless buffer has unsaved changes
+set autoread
+
+" Case insensitive pattern matching
+set ignorecase
+
+" Overrides ignorecase if pattern contains upcase
+set smartcase
+
+" When at 3 spaces and I hit >>, go to 4, not 5
+set shiftround
+
+" Keep 5 lines of context when scrolling
+set scrolloff=5
+
+" Don't add the comment prefix when I hit enter or o/O on a comment line.
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" Move one displayed line at a time, default is one fysical line
+nmap k gk
+nmap j gj
+
+" Bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR>
+
+" Bind \ (backward slash) to grep shortcut
+command -nargs=+ -complete=file -bar Ag silent! grep! <args>|cwindow|redraw!
+nnoremap \ :Ag<SPACE>
+
+" Disable Ex mode
+map Q <Nop>
+
+" Allow undo history to persist after closing buffer
+if has('persistent_undo')
+  set undodir=~/.vim/_undo
+  set undofile
+end
+
+" Shortcuts
+map <C-t> <esc>:tabnew<CR>
+map <C-s> <esc>:w<CR>
+imap <C-s> <esc>:w<CR>
+
+" Toggle NERDtree
+map <C-n> :NERDTreeToggle<CR>
+
+" Embrace typos
+command! Q q
+command! W w
+command! Wq wq
+
+" Tell NERD tree which files to ignore
+let NERDTreeIgnore=['\~$', '\.pyc', '\.swp$', '\.git',
+      \ 'node_modules', '^tmp$', '^log$', '^dist$',
+      \ '\coverage$', '\.DS_Store$', '\.tmp$', '\.gitkeep$']
+
+" Tell Netrw which files to ignore
+let g:netrw_list_hide= '.*\.swp$,'
+let g:netrw_list_hide.= '\.git,\.gitkeep,\.keep,'
+let g:netrw_list_hide.= 'node_modules,'
+let g:netrw_list_hide.= '\.gem,\.bundle,'
+let g:netrw_list_hide.= '\.DS_Store,'
+let g:netrw_list_hide.= 'tmp,dist,log,coverage'
+
+set wildignore=log/**,node_modules/**,target/**,tmp/**,dist/**,*.rbc
+set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
+set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
+set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
+set wildignore+=*.swp,*~,._*
+
+" Extra filetypes
+au BufRead,BufNewFile *.es6 set filetype=javascript
+au BufRead,BufNewFile *.{mustache,handlebars,hbs}{,.erb} set filetype=html syntax=mustache
