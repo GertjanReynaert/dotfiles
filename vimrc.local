@@ -2,7 +2,7 @@
 set cursorline
 
 " Relative line numbers
-" set relativenumber
+set relativenumber
 
 " Make it obvious where 80 characters is
 set textwidth=80
