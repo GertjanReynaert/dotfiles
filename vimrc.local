@@ -67,6 +67,9 @@ imap <C-s> <esc>:w<CR>
 " Toggle NERDtree
 map <C-n> :NERDTreeToggle<CR>
 
+" Emmet leader
+let g:user_emmet_leader_key='<C-m>'
+
 " Embrace typos
 command! Q q
 command! W w
