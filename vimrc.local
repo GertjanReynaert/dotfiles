@@ -1,8 +1,17 @@
+" Set colorscheme
+colorscheme jellybeans
+
 " Highlight current line
 set cursorline
 
 " Relative line numbers
 set relativenumber
+
+" Set windowsettings
+set winwidth=84
+set winheight=5
+set winminheight=5
+set winheight=999
 
 " Make it obvious where 80 characters is
 set textwidth=80
