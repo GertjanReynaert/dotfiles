@@ -3,13 +3,9 @@ shortcut|description
 ctrl-n|open NerdTree
 i|open the selected file in a verticaly split window
 s|open the selected file in a horizontaly split window
--|-
 v|visual mode
 shift-v|visual-block mode
--|-
 %|select all until the end-tag
--|-
 y|copy  selected text
 p|paste selected text
--|-
 gc|comment out/in selected text
