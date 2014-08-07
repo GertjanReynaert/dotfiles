@@ -9,3 +9,4 @@ shift-v|visual-block mode
 y|copy  selected text
 p|paste selected text
 gc|comment out/in selected text
+:%s/find/replace/g| find and replace something over the entire document
