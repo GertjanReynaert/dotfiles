@@ -2,6 +2,7 @@
   name = Gertjan Reynaert
   email = gertjan@typework.com
 [alias]
+  cm = commit -m
   l = !git log --graph --pretty=colored
   cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
 [pretty]
