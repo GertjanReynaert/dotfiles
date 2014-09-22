@@ -4,6 +4,7 @@
 [alias]
   cm = commit -m
   sq = !sh -c 'git rebase -i HEAD~$1' -
+  nb = !sh -c 'git checkout -b gr-$1' -
   l = !git log --graph --pretty=colored
   cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
 [pretty]
