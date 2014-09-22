@@ -2,9 +2,10 @@
   name = Gertjan Reynaert
   email = gertjan@typework.com
 [alias]
+  nb = !sh -c 'git checkout master && git checkout -b gr-$1' -
   cm = commit -m
   sq = !sh -c 'git rebase -i HEAD~$1' -
-  nb = !sh -c 'git checkout -b gr-$1' -
+  db = !sh -c 'git checkout master && git branch -d gr-$1' -
   l = !git log --graph --pretty=colored
   cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
 [pretty]
