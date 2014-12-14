@@ -14,4 +14,4 @@ p|paste selected text
 "*p|paste selected text to mac clipboard
 gc|comment out/in selected text
 :%s/find/replace/g| find and replace something over the entire document
-
+:s/find/replace/g| find and replace something in the selection
