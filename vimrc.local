@@ -1,5 +1,6 @@
 " Set colorscheme
-colorscheme jellybeans
+" colorscheme jellybeans
+colorscheme cobalt2
 
 " Highlight current line
 set cursorline
