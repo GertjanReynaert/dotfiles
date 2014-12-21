@@ -9,6 +9,8 @@
   l = !git log --graph --pretty=colored
   cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
   wip = !git add -A && git commit -m "wip"
+  cleanup = !git add -A && git commit -m "cleanup"
+  hf = !git add -A && git commit -m 'hound fix'
 [pretty]
   colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [credential]
