@@ -98,4 +98,5 @@ au BufRead,BufNewFile *.{mustache,handlebars,hbs}{,.erb} set filetype=html synta
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 
+nn <F7> :setlocal spell! spell?<CR>
 map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
