@@ -7,10 +7,11 @@
   sq = !sh -c 'git rebase -i HEAD~$1' -
   db = !sh -c 'git checkout master && git pull && git branch -d gr-$1' -
   l = !git log --graph --pretty=colored
-  cleanup = !git remote prune origin && git gc && git clean -df && git stash clear
+  clean = !git remote prune origin && git gc && git clean -df && git stash clear
   wip = !git add -A && git commit -m "wip"
   cleanup = !git add -A && git commit -m "cleanup"
   hf = !git add -A && git commit -m 'hound fix'
+  continue = !git add -A && git rebase --continue
 [pretty]
   colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [credential]

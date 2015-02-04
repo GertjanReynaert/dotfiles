@@ -15,3 +15,5 @@ p                   | paste selected text
 gc                  | comment out/in selected text
 :%s/find/replace/g  | find and replace something over the entire document
 :s/find/replace/g   | find and replace something in the selection
+:s/,/,\r/g          | replace all , with , and newline. Used for converting json
+string to readable object
