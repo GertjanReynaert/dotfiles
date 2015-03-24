@@ -19,7 +19,7 @@ bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
 
 # Simplify status bar display.
 set -g status-left "#[fg=colour236,bg=colour166] #S "
-set -g status-right "#[fg=colour236,bg=colour166] #S > #W #D Tab:#I Pane:#P "
+# set -g status-right "#[fg=colour236,bg=colour166] #S > #W #D Tab:#I Pane:#P "
 
 # default statusbar colors
 set -g status-position bottom # set status bar on bottom
