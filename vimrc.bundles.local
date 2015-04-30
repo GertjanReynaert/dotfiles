@@ -1,3 +1,5 @@
+Bundle 'Raimondi/delimitMate'
+Bundle 'mxw/vim-jsx'
 Bundle 'scrooloose/nerdtree'
 Bundle 'othree/html5.vim'
 Bundle 'pangloss/vim-javascript'
