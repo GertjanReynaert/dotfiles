@@ -21,7 +21,7 @@ bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
 set -g status-position bottom
 
 # Set session name to the left
-set -g status-left "#[fg=colour236,bg=colour166] #S "
+set -g status-left "#[fg=colour236,bg=colour166] #S"
 
 # set panes center
 set -g status-justify centre # set tabs in center
@@ -33,7 +33,36 @@ set-option -g status-fg colour136 #yellow
 set-option -g status-attr default
 
 # set date and time to the right
-set -g status-right '#(date "+%b %d - %I:%M")'
+set -g status-right '#(date "+%R")'
+# date formats:
+# a: day human short
+# A: day human long
+# b,h: month human short
+# B: month human long
+# c: full date
+# C: 20 (first 2 numbers of year)
+# d: day number short
+# D: date MM/DD/YYYY
+# e: day number short
+# F: date YYYY-MM-DD
+# g: year (last 2 numbers)
+# G: year (4 digits)
+# H: hour (24h format)
+# I: hour (12h format)
+# j: 120
+# m: month number
+# M: minute
+# p: am/pm
+# r: time HH:MM:SS am/pm
+# R: time HH:MM (24h format)
+# S: seconds
+# T,x: time HH:MM:SS (24h format)
+# u: month (single digit)
+# v: date DD-month(short)-YYYY
+# z: timezone numbers (-+ HHMM)
+# Z: timezone human
+
+
 # set -g status-right "#[fg=colour236,bg=colour166] #S > #W #D Tab:#I Pane:#P "
 
 # pane border
