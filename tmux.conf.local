@@ -22,6 +22,7 @@ set -g status-position bottom
 
 # Set session name to the left
 set -g status-left "#[fg=colour236,bg=colour166] #S "
+set -g status-left-length 32
 
 # set panes center
 set -g status-justify centre # set tabs in center
@@ -49,7 +50,7 @@ set -g status-right '#(date "+%R")'
 # G: year (4 digits)
 # H: hour (24h format)
 # I: hour (12h format)
-# j: 120
+# j: day in year
 # m: month number
 # M: minute
 # p: am/pm
@@ -79,3 +80,4 @@ set-option -g display-panes-colour blue #blue
 
 # clock
 set-window-option -g clock-mode-colour colour220 #yellow
+set -g status-interval 1
