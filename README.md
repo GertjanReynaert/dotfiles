@@ -30,4 +30,8 @@ rcup -d dotfiles -d dotfiles-local -x README.md
 
 This will create symlinks for config files in your home directory.
 
+Update
+------
+
+Just pull the latest version from Github and run `rcup`
 You can safely run `rcup` multiple times to update.
