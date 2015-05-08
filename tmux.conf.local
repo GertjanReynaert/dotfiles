@@ -21,7 +21,7 @@ bind-key -t vi-copy Enter copy-pipe "reattach-to-user-namespace pbcopy"
 set -g status-position bottom
 
 # Set session name to the left
-set -g status-left "#[fg=colour236,bg=colour166] #S"
+set -g status-left "#[fg=colour236,bg=colour166] #S "
 
 # set panes center
 set -g status-justify centre # set tabs in center
