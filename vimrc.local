@@ -1,5 +1,4 @@
 " Set colorscheme
-" colorscheme jellybeans
 colorscheme cobalt2
 
 " Highlight current line
@@ -17,7 +16,7 @@ set winheight=999
 " Make it obvious where 80 characters is
 set textwidth=80
 set colorcolumn=+1
-highlight ColorColumn ctermbg=7
+highlight ColorColumn ctermbg=221
 
 " Highlight all matches after entering search pattern
 set hlsearch
@@ -110,4 +109,4 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_html_tidy_exec = "/usr/local/bin/tidy5"
 
 let g:syntastic_javascript_checkers = ["eslint"]
-" let g:syntastic_ruby_checkers = ["mri", "rubocop"]
+let g:syntastic_ruby_checkers = ["mri", "rubocop"]
