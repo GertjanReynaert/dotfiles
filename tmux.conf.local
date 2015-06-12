@@ -1,6 +1,9 @@
 # reload the tmux config with "r"
 bind-key r source-file ~/.tmux.conf \; display-message "~/.tmux.conf reloaded"
 
+# override C-s thoughtbot prefix to C-a
+set -g prefix C-a
+
 # Make Vim responsive to "esc"
 set -s escape-time 0
 
