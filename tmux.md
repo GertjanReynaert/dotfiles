@@ -200,7 +200,7 @@ set -g status-interval 1
 Color codes are 256 colors, for easy reference you can check color codes
 [here](https://upload.wikimedia.org/wikipedia/en/1/15/Xterm_256color_chart.svg)
 
-### Possible [date formats](http://man.cx/strftime(3):
+### Possible [date formats](http://man.cx/strftime(3)):
 
 Summary of usefull ones to me, follow link in the title for full manpage result
 
