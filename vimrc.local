@@ -13,6 +13,11 @@ set winheight=5
 set winminheight=5
 set winheight=999
 
+" do not wrap lines if they exceed pane width
+" most lines are under 80 chars, and this enables better visibility in small
+" side by side panes, where otherwise a line could get wrapped over 3 lines
+set nowrap
+
 " Make it obvious where 80 characters is
 set textwidth=80
 set colorcolumn=+1
@@ -73,7 +78,7 @@ command! W w
 command! Wq wq
 
 " Tell NERD tree which files to ignore
-let NERDTreeIgnore=['node_modules$']
+" let NERDTreeIgnore=['node_modules$']
 
 " Tell Netrw which files to ignore
 let g:netrw_list_hide= '.*\.swp$,'
@@ -110,3 +115,6 @@ let g:syntastic_html_tidy_exec = "/usr/local/bin/tidy5"
 
 let g:syntastic_javascript_checkers = ["eslint"]
 let g:syntastic_ruby_checkers = ["mri", "rubocop"]
+
+" neomake
+autocmd! BufWritePost * Neomake
