@@ -4,6 +4,7 @@
 [alias]
   nb = !sh -c 'git checkout master && git checkout -b gr-$1' -
   cm = commit -m
+  cmv = commit -v
   sq = !sh -c 'git rebase -i HEAD~$1' -
   db = !sh -c 'git checkout master && git pull && git branch -d gr-$1' -
   l = !git log --graph --pretty=colored
@@ -12,6 +13,7 @@
   cleanup = !git add -A && git commit -m "cleanup"
   hf = !git add -A && git commit -m 'hound fix'
   continue = !git add -A && git rebase --continue
+  hist = log --pretty=format:\"%C(green)%ad%Creset %C(red)%h%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset\" --abbrev-commit --date=iso
 [pretty]
   colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
 [credential]
