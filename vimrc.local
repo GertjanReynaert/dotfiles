@@ -78,7 +78,7 @@ command! W w
 command! Wq wq
 
 " Tell NERD tree which files to ignore
-" let NERDTreeIgnore=['node_modules$']
+let NERDTreeIgnore=['node_modules$']
 
 " Tell Netrw which files to ignore
 let g:netrw_list_hide= '.*\.swp$,'
@@ -107,14 +107,8 @@ let g:jsx_ext_required = 0
 let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 
-" syntastic
-let g:syntastic_check_on_open = 0
-let g:syntastic_check_on_wq = 0
-
-let g:syntastic_html_tidy_exec = "/usr/local/bin/tidy5"
-
-let g:syntastic_javascript_checkers = ["eslint"]
-let g:syntastic_ruby_checkers = ["mri", "rubocop"]
-
 " neomake
 autocmd! BufWritePost * Neomake
+
+" csscomb
+autocmd BufWritePre,FileWritePre *.css,*.less,*.scss,*.sass silent! :CSScomb

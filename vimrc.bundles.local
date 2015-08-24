@@ -5,6 +5,7 @@ Plug 'rschmukler/pangloss-vim-indent'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-dispatch'
 Plug 'benekastah/neomake'
+Plug 'csscomb/vim-csscomb'
 
 " Syntax highlight
 Plug 'elixir-lang/vim-elixir'
@@ -20,5 +21,4 @@ Plug 'urso/haskell_syntax.vim'
 Plug 'wting/rust.vim'
 
 " Color schemes
-" Plug 'chriskempson/base16-vim'
 Plug 'gertjanreynaert/cobalt2-vim-theme'
