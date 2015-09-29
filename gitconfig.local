@@ -1,6 +1,7 @@
 [user]
   name = Gertjan Reynaert
   email = gertjan@typework.com
+
 [alias]
   nb = !sh -c 'git checkout master && git checkout -b gr-$1' -
   cm = commit -m
@@ -14,7 +15,28 @@
   hf = !git add -A && git commit -m '[ci skip] hound fix'
   continue = !git add -A && git rebase --continue
   hist = log --pretty=format:\"%C(green)%ad%Creset %C(red)%h%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset\" --abbrev-commit --date=iso
+
+[color]
+    ui = auto
+  [color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+  [color "diff"]
+    meta = blue
+    frag = magenta
+    old = red
+    new = green
+    whitespace = red reverse
+  [color "status"]
+    added = green
+    changed = yellow
+    untracked = cyan
+  [core]
+    whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+
 [pretty]
   colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
+
 [credential]
   helper = osxkeychain
