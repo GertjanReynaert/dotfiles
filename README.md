@@ -1,37 +1,23 @@
-GertjanReynaert dotfiles
-===============
+Dotfiles
+========
 
-I use [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles) and
-GertjanReynaert/dotfiles together using the `*.local` convention described in
-thoughtbot/dotfiles.
+*A set of vim, zsh, git, and tmux configuration files.*
 
-Requirements
-------------
+Use in combination with [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles).
 
-Set zsh as your login shell.
+## Usage
 
-chsh -s /bin/zsh
+```
+git clone https://github.com/thoughtbot/dotfiles.git .dotfiles
+git clone https://github.com/GertjanReynaert/dotfiles.git .dotfiles-local
+env RCRC=$HOME/.dotfiles-local/rcrc rcup
+```
 
-Install [rcm](https://github.com/mike-burns/rcm).
+## Neovim
 
-brew tap mike-burns/rcm
-brew install rcm
+Symlink vim setup to nvim setup
 
-Install
--------
-
-Clone onto your laptop:
-
-git clone git://github.com/GertjanReynaert/dotfiles.git
-
-Install:
-
-rcup -d dotfiles -d dotfiles-local -x README.md
-
-This will create symlinks for config files in your home directory.
-
-Update
-------
-
-Just pull the latest version from Github and run `rcup`
-You can safely run `rcup` multiple times to update.
+```
+ln -s $HOME/.vim $HOME/.nvim
+ln -s $HOME/.dotfiles/vimrc $HOME/.nvimrc
+```
