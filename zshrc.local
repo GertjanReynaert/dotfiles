@@ -5,6 +5,9 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 # Load rbenv
 eval "$(rbenv init - --no-rehash)"
 
+# Connect to docker deamon
+eval "$(docker-machine env default)"
+
 # Enable case-insensitive autocomplete
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 
