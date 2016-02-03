@@ -4,7 +4,7 @@
 
 [alias]
   nb = !sh -c 'git checkout master && git checkout -b gr-$1' -
-  cm = commit -m
+  cm = !sh -c 'git cz'
   cmv = commit -v
   sq = !sh -c 'git rebase -i HEAD~$1' -
   db = !sh -c 'git checkout develop && git pull origin develop && git branch -d $1 && git fetch' -
