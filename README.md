@@ -13,6 +13,12 @@ git clone https://github.com/GertjanReynaert/dotfiles.git dotfiles-local
 env RCRC=$HOME/dotfiles-local/rcrc rcup
 ```
 
+## Git
+
+### fancy diffs
+
+[diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
+
 ## Neovim
 
 ### install
