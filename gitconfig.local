@@ -3,15 +3,17 @@
   email = gertjan@typework.com
 
 [alias]
-  nb = !sh -c 'git checkout master && git checkout -b gr-$1' -
+  wip = !git add -A && git commit -m 'temp(WIP): work in progress [ci skip]'
+  cleanup = !git add -A && git commit -m 'temp(WIP): cleanup'
+
   cm = !sh -c 'git cz'
-  sq = !sh -c 'git rebase -i HEAD~$1' -
   db = !sh -c 'git checkout develop && git pull origin develop && git branch -d $1 && git fetch' -
-  l = !git log --graph --pretty=colored
-  clean = !git remote prune origin && git gc && git clean -df && git stash clear
-  wip = !git add -A && git commit -m 'temp(WIP) work in progress [ci skip]'
-  cleanup = !git add -A && git commit -m 'temp(WIP) cleanup'
+
+  rs = !sh -c 'git reset --soft HEAD~$1' -
+  sq = !sh -c 'git rebase -i HEAD~$1' -
   continue = !git add -A && git rebase --continue
+
+  l = !git log --graph --pretty=colored
   hist = log --pretty=format:\"%C(green)%ad%Creset %C(red)%h%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset\" --abbrev-commit --date=iso
 
 [color]
