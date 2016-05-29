@@ -6,8 +6,9 @@ Mac general settings
 - Appearance: BLUE
 - dark menubar and dock: YES
 - auto hide and show menu bar: NO
-- Highlight color: CUSTOM, dark scale: left (brightest), green, on edge with
-yellow
+- Highlight color:
+  - CUSTOM, dark scale: left (brightest), green, on edge with yellow
+  - R: 202, G: 248, B: 51
 - Sidebar icon size: MEDIUM
 - scrollbars: AUTO
 - click scrollbar: JUMP TO THE SPOT THAT'S CLICKED
