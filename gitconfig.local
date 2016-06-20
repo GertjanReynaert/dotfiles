@@ -9,7 +9,7 @@
   cm = !sh -c 'git cz'
   db = !sh -c 'git checkout develop && git pull origin develop && git branch -d $1 && git fetch' -
 
-  rs = !sh -c 'git reset --soft HEAD~$1' -
+  rs = !sh -c 'git reset HEAD~$1' -
   sq = !sh -c 'git rebase -i HEAD~$1' -
   continue = !git add -A && git rebase --continue
 
