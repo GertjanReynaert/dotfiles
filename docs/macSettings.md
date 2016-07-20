@@ -130,6 +130,10 @@ hide
 - [Dropbox](https://www.dropbox.com/)
 - [OnePassword](https://agilebits.com/downloads)
 - [Spotify](https://www.spotify.com/be-nl/)
+- [Atom beta](https://atom.io/beta)
+- [Atom (stable)](https://atom.io/)
+- [Hyperterm](https://hyperterm.org/)
+- [Slack](https://itunes.apple.com/be/app/slack/id803453959?mt=12)
 
 ## Iterm2 settings
 
