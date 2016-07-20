@@ -21,7 +21,7 @@ module.exports = {
     // custom css to embed in the main window
     css: `
       .tab_active::before {
-        border-bottom-color: #F4D300;
+        border-bottom: 2px solid #F4D300;
       }
     `,
 
