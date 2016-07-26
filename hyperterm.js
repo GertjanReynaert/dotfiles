@@ -26,7 +26,15 @@ module.exports = {
     `,
 
     // custom css to embed in the terminal window
-    termCSS: '',
+    termCSS: `
+      x-screen a {
+        color: #1478DB;
+      }
+
+      x-screen a.hover {
+        text-decoration: none;
+      }
+    `,
 
     // custom padding (css format, i.e.: `top right bottom left`)
     padding: '5px',
@@ -59,7 +67,9 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: [],
+  plugins: [
+    "hyperlinks"
+  ],
 
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
