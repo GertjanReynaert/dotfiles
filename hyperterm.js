@@ -29,6 +29,7 @@ module.exports = {
     termCSS: `
       x-screen a {
         color: #1478DB;
+        text-decoration: underline;
       }
 
       x-screen a.hover {
