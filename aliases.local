@@ -1,5 +1,13 @@
 alias e='nvim'
 alias ee='NVIM_TUI_ENABLE_TRUE_COLOR=1 NVIM_TUI_ENABLE_CURSOR_SHAPE=1 nvim'
+
 alias be='bundle exec'
+
 alias claer='clear'
 alias clera='clear'
+
+alias usage='vtop'
+alias cpu='vtop'
+alias monitor='vtop'
+alias activity='vtop'
+alias activity-monitor='vtop'
