@@ -1,11 +1,12 @@
 Plug 'Raimondi/delimitMate'
+Plug 'airblade/vim-gitgutter'
+Plug 'benekastah/neomake'
 Plug 'bling/vim-airline'
+Plug 'csscomb/vim-csscomb'
 Plug 'lilydjwg/colorizer'
 Plug 'rschmukler/pangloss-vim-indent'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-dispatch'
-Plug 'benekastah/neomake'
-Plug 'csscomb/vim-csscomb'
 
 " Syntax highlight
 Plug 'elixir-lang/vim-elixir'
