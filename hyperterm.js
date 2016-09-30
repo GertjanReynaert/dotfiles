@@ -70,7 +70,9 @@ module.exports = {
   //   `project#1.0.1`
   plugins: [
     "hyperlinks",
-    "hyperterm-paste"
+    // "hyperterm-clicky",
+    "hyperterm-paste",
+    "hyperterm-cursor"
   ],
 
   // in development, you can create a directory under
