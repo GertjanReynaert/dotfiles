@@ -71,8 +71,7 @@ module.exports = {
   plugins: [
     "hyperlinks",
     // "hyperterm-clicky",
-    "hyperterm-paste",
-    "hyperterm-cursor"
+    "hyperterm-paste"
   ],
 
   // in development, you can create a directory under
