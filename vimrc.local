@@ -106,6 +106,4 @@ let g:airline_right_sep = ''
 " neomake
 autocmd! BufWritePost * Neomake
 let g:neomake_javascript_enabled_makers = ['eslint']
-
-" csscomb
-autocmd BufWritePre,FileWritePre *.css,*.less,*.scss,*.sass silent! :CSScomb
+" let g:neomake_javascript_enabled_makers = ['flow']
