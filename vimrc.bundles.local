@@ -20,7 +20,7 @@ Plug 'othree/yajs.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'urso/haskell_syntax.vim'
 Plug 'wting/rust.vim'
-Plug 'flowtype/vim-flow'
+" Plug 'flowtype/vim-flow'
 
 " Color schemes
 Plug 'gertjanreynaert/cobalt2-vim-theme'

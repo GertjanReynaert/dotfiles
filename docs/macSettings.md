@@ -18,6 +18,10 @@ Mac general settings
 - allow handoff: YES
 - use lcd font smoothing: YES
 
+## Mission control
+
+- Automatically rearrange Spaces based on most recent use: off
+
 ## Trackpad
 
 - Three finger drag:
