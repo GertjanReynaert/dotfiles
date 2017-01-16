@@ -13,15 +13,15 @@ module.exports = {
     foregroundColor: '#fff',
 
     // terminal background color
-    backgroundColor: '#193549',
+    backgroundColor: 'rgba(25,53,73,.6)',
 
     // border color (window, tabs)
     borderColor: '#193549',
 
     // custom css to embed in the main window
     css: `
-      .tab_active::before {
-        border-bottom: 2px solid #F4D300;
+      .tab_active {
+        border-bottom: 2px solid #F4D300 !important;
       }
     `,
 
@@ -77,5 +77,10 @@ module.exports = {
   // in development, you can create a directory under
   // `~/.hyperterm_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed
-  localPlugins: []
+
+  // create a file vibrancy.js with following contents:
+  // module.exports.onWindow = browserWindow => browserWindow.setVibranch('dark');
+  localPlugins: [
+    'vibrancy',
+  ]
 };
