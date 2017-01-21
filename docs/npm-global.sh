@@ -3,5 +3,5 @@
 npm install -g npm
 npm install -g yarn
 
-yarn global add elm json-server yarn vtop speed-test
+yarn global add create-react-app react-native-cli prettier semantic-release
 

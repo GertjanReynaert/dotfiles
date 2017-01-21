@@ -125,7 +125,7 @@ hide
 ### downloads
 
 - Xcode devtools (top menu: Xcode/open developer tools/ more dev tools)
-- [Iterm2](https://iterm2.com/downloads.html) (recommended beta channel)
+- [Iterm2](https://iterm2.com/downloads.html)
 - [Iterm2 cobalt2 color theme](https://raw.githubusercontent.com/wesbos/Cobalt2-iterm/master/cobalt2.itermcolors) (click right -> save as...)
 - [SizeUp](http://www.irradiatedsoftware.com/sizeup/) (until [Spectacles](https://www.spectacleapp.com/) gets margins and spacers)
 - [Google Chrome canary](https://www.google.com/chrome/browser/canary.html)
@@ -134,10 +134,13 @@ hide
 - [Dropbox](https://www.dropbox.com/)
 - [OnePassword](https://agilebits.com/downloads)
 - [Spotify](https://www.spotify.com/be-nl/)
-- [Atom beta](https://atom.io/beta)
-- [Atom (stable)](https://atom.io/)
-- [Hyperterm](https://hyperterm.org/)
-- [Slack](https://itunes.apple.com/be/app/slack/id803453959?mt=12)
+- [VSCode](https://code.visualstudio.com/)
+- [Slack](https://slack.com/downloads/osx)
+- [Skype](https://www.skype.com/nl/download-skype/skype-for-computer/)
+- [Dash](https://kapeli.com/dash)
+
+- [Docker](https://docs.docker.com/docker-for-mac/)
+- [Citrix](https://www.citrix.nl/go/receiver.html)
 
 ## Iterm2 settings
 
