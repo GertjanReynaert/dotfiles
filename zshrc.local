@@ -1,6 +1,7 @@
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 export PATH="$HOME/.bin:$PATH"
 export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.5/bin
 
 # React-native android
 export ANDROID_HOME=~/Library/Android/sdk
