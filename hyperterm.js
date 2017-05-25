@@ -69,9 +69,10 @@ module.exports = {
   //   `@company/project`
   //   `project#1.0.1`
   plugins: [
-    "hyperlinks",
+    'hyperlinks',
     // "hyperterm-clicky",
-    "hyperterm-paste"
+    'hyperterm-paste',
+    'hyper-vibrancy'
   ],
 
   // in development, you can create a directory under
@@ -80,7 +81,5 @@ module.exports = {
 
   // create a file vibrancy.js with following contents:
   // module.exports.onWindow = browserWindow => browserWindow.setVibranch('dark');
-  localPlugins: [
-    'vibrancy',
-  ]
+  localPlugins: []
 };
