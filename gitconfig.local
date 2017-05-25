@@ -1,6 +1,6 @@
 [user]
   name = Gertjan Reynaert
-  email = gertjan@typework.com
+  email = gertjan.reynaert@gmail.com
 
 [alias]
   wip = !git add -A && git commit -m 'temp(WIP): work in progress [ci skip]'
