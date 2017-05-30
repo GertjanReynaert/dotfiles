@@ -11,3 +11,5 @@ alias cpu='vtop'
 alias monitor='vtop'
 alias activity='vtop'
 alias activity-monitor='vtop'
+
+alias nombom='bower cache clean && rm -rf node_modules bower_components && npm install && bower install'
