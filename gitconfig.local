@@ -1,3 +1,6 @@
+[core]
+  pager = diff-so-fancy | less --tabs=4 -RFX
+  
 [user]
   name = Gertjan Reynaert
   email = gertjan.reynaert@gmail.com
