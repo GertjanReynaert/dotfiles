@@ -1,7 +1,4 @@
-alias e='nvim'
-alias ee='NVIM_TUI_ENABLE_TRUE_COLOR=1 NVIM_TUI_ENABLE_CURSOR_SHAPE=1 nvim'
-
-alias be='bundle exec'
+alias e='vim'
 
 alias claer='clear'
 alias clera='clear'
@@ -13,3 +10,8 @@ alias activity='vtop'
 alias activity-monitor='vtop'
 
 alias nombom='bower cache clean && rm -rf node_modules bower_components && npm install && bower install'
+
+alias intuoBootServer='rails s -p 7000 -b api.intuo.local'
+alias intuoBootRedis='redis-server /usr/local/etc/redis.conf'
+alias intuoBootMemcached='/usr/local/opt/memcached/bin/memcached'
+alias intuoBootEmber='ember server --host dev.intuo.local'
