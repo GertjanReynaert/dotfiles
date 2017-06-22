@@ -15,3 +15,5 @@ alias intuoBootServer='rails s -p 7000 -b api.intuo.local'
 alias intuoBootRedis='redis-server /usr/local/etc/redis.conf'
 alias intuoBootMemcached='/usr/local/opt/memcached/bin/memcached'
 alias intuoBootEmber='ember server --host dev.intuo.local'
+
+alias addDockSpace='defaults write com.apple.dock persistent-apps -array-add "{"tile-type"="spacer-tile";}" && killall Dock'
