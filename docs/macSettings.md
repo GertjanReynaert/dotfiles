@@ -31,6 +31,18 @@ defaults write NSGlobalDomain AppleHighlightColor -string "0.791881 0.974023 0.2
 * Three finger drag:
   SystemPreferences/accessibility/mouseAndTrackpad/trackpadOptions
 
+## Keyboard
+
+* Key Repeat: Fastest
+
+* Delay Until Repeat: Shortest
+
+* Enable key repeat
+
+```
+defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+```
+
 ### Point and click
 
 * Look up & data detectors: NO
