@@ -2,23 +2,15 @@ Plug 'Raimondi/delimitMate'
 Plug 'airblade/vim-gitgutter'
 Plug 'bling/vim-airline'
 Plug 'lilydjwg/colorizer'
-Plug 'rschmukler/pangloss-vim-indent'
 Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-dispatch'
 
 " Syntax highlight
-Plug 'elixir-lang/vim-elixir'
-Plug 'groenewege/vim-less'
-Plug 'guns/vim-clojure-static'
-Plug 'lambdatoast/elm.vim'
 Plug 'mustache/vim-mustache-handlebars'
 Plug 'mxw/vim-jsx'
 Plug 'othree/es.next.syntax.vim'
 Plug 'othree/html5.vim'
 Plug 'othree/yajs.vim'
 Plug 'pangloss/vim-javascript'
-Plug 'urso/haskell_syntax.vim'
-Plug 'wting/rust.vim'
 " Plug 'flowtype/vim-flow'
 
 " Color schemes
