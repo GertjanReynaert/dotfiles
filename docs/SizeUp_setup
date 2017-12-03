@@ -1,0 +1,220 @@
+#!/usr/bin/env bash
+
+echo "Setting all SizeUp preferences..."
+echo " "
+
+###############################################################################
+# SETTINGS                                                                    #
+###############################################################################
+
+# Show SizeUp in Menu Bar
+defaults write com.irradiatedsoftware.SizeUp MenuEnabled -int 0
+defaults write com.irradiatedsoftware.SizeUp suppressMenuBarDisabledPopup -int 1
+
+# Start SizeUp Automatically at Login
+echo "Manually set 'Start SizeUp Automatically at Login'"
+
+# Show SizeUp Preferences on Launch
+defaults write com.irradiatedsoftware.SizeUp ShowPrefsOnLaunch -int 0
+
+# Check for Updates Automatically
+defaults write com.irradiatedsoftware.SizeUp SUEnableAutomaticChecks -int 1
+echo "Double check if Automatic Updates is set"
+
+
+# Screen edge margins enabled
+defaults write com.irradiatedsoftware.SizeUp ScreenEdgeMarginsEnabled -int 1
+
+# Margin Down
+defaults write com.irradiatedsoftware.SizeUp MarginDown -int 10
+
+# Margin Left
+defaults write com.irradiatedsoftware.SizeUp MarginLeft -int 30
+
+# Margin Right
+defaults write com.irradiatedsoftware.SizeUp MarginRight -int 30
+
+# Margin Up
+defaults write com.irradiatedsoftware.SizeUp MarginUp -int 30
+
+
+# Partitions enabled
+defaults write com.irradiatedsoftware.SizeUp PartitionMarginsEnabled -int 1
+
+# Margin Horizontal
+defaults write com.irradiatedsoftware.SizeUp MarginHorizontal -int 20
+
+# Margin Vertical
+defaults write com.irradiatedsoftware.SizeUp MarginVertical -int 20
+
+
+###############################################################################
+# SHORTCUTS                                                                   #
+###############################################################################
+
+# Enable shortcuts
+defaults write com.irradiatedsoftware.SizeUp ShortcutsDisabled -int 0
+
+###############################################################################
+# Split Screen Actions                                                        #
+###############################################################################
+
+# Send Window Left (ALT-CMD-Left)
+defaults write com.irradiatedsoftware.SizeUp Left -dict \
+	ComboCode -int 123 \
+	ComboFlags -int 9961472 \
+	Height -int 1 \
+	Width -string "0.5" \
+	X -int 0 \
+	Y -int 0
+
+# Send Window Right (ALT-CMD-Right)
+defaults write com.irradiatedsoftware.SizeUp Right -dict \
+	ComboCode -int 124 \
+	ComboFlags -int 9961472 \
+	Height -int 1 \
+	Width -string "0.5" \
+	X -string "0.5" \
+	Y -int 0
+
+# Send Window Up (ALT-CMD-Up)
+defaults write com.irradiatedsoftware.SizeUp Up -dict \
+	ComboCode -int 126 \
+	ComboFlags -int 9961472 \
+	Height -string "0.5" \
+	Width -int 1 \
+	X -int 0 \
+	Y -int 0
+
+# Send Window Down (ALT-CMD-Down)
+defaults write com.irradiatedsoftware.SizeUp Down -dict \
+	ComboCode -int 125 \
+	ComboFlags -int 9961472 \
+	Height -string "0.5" \
+	Width -int 1 \
+	X -int 0 \
+	Y -string "0.5"
+
+###############################################################################
+# Quarter Screen (Quadrant) Actions                                           #
+###############################################################################
+
+# Send Window Upper Left (CTRL-ALT-CMD-Left)
+defaults write com.irradiatedsoftware.SizeUp "Upper Left" -dict \
+	ComboCode -int 123 \
+	ComboFlags -int 10223616 \
+	Height -string "0.5" \
+	Width -string "0.5" \
+	X -int 0 \
+	Y -int 0
+
+# Send Window Upper Right (CTRL-ALT-CMD-Up)
+defaults write com.irradiatedsoftware.SizeUp "Upper Right" -dict \
+	ComboCode -int 126 \
+	ComboFlags -int 10223616 \
+	Height -string "0.5" \
+	Width -string "0.5" \
+	X -string "0.5" \
+	Y -int 0
+
+# Send Window Lower Left (CTRL-ALT-CMD-Down)
+defaults write com.irradiatedsoftware.SizeUp "Lower Left" -dict \
+	ComboCode -int 125 \
+	ComboFlags -int 10223616 \
+	Height -string "0.5" \
+	Width -string "0.5" \
+	X -int 0 \
+	Y -string "0.5"
+
+# Send Window Lower Right (CTRL-ALT-CMD-Right)
+defaults write com.irradiatedsoftware.SizeUp "Lower Right" -dict \
+	ComboCode -int 124 \
+	ComboFlags -int 10223616 \
+	Height -string "0.5" \
+	Width -string "0.5" \
+	X -string "0.5" \
+	Y -string "0.5"
+
+###############################################################################
+# Multiple Monitor Actions                                                    #
+###############################################################################
+
+# Sent Window Prev. Monitor (CTRL-ALT-Left)
+defaults write com.irradiatedsoftware.SizeUp "Prev Monitor" -dict \
+	ComboCode -int 123 \
+	ComboFlags -int 9175040
+
+# Sent Window Next Monitor (CTRL-ALT-Right)
+defaults write com.irradiatedsoftware.SizeUp "Next Monitor" -dict \
+	ComboCode -int 124 \
+	ComboFlags -int 9175040
+
+# Resize Windows Proportionally
+defaults write com.irradiatedsoftware.SizeUp MultiMonitorResizeWindowProportionally -int 1
+
+
+###############################################################################
+# Spaces Actions                                                              #
+###############################################################################
+
+# Sent Window Space Prev. (Shift-CMD-Left)
+defaults write com.irradiatedsoftware.SizeUp "Space Prev" -dict \
+	ComboCode -int 123 \
+	ComboFlags -int 9568256
+
+# Sent Window Space Next (Shift-CMD-Right)
+defaults write com.irradiatedsoftware.SizeUp "Space Next" -dict \
+	ComboCode -int 124 \
+	ComboFlags -int 9568256
+
+# Sent Window Space Above (Shift-CMD-Up)
+defaults write com.irradiatedsoftware.SizeUp "Space Above" -dict \
+	ComboCode -int 126 \
+	ComboFlags -int 9568256
+
+# Sent Window Space Below (Shift-CMD-Right)
+defaults write com.irradiatedsoftware.SizeUp "Space Below" -dict \
+	ComboCode -int 125 \
+	ComboFlags -int 9568256
+
+###############################################################################
+# SnapBack Action                                                             #
+###############################################################################
+
+# SnapBack Window (CTRL-ALT-CMD-/)
+defaults write com.irradiatedsoftware.SizeUp SnapBack -dict \
+	ComboCode -int 44 \
+	ComboFlags -int 1835008
+
+###############################################################################
+# Other Actions                                                               #
+###############################################################################
+
+# Make Window Full Screen (ALT-CMD-,)
+defaults write com.irradiatedsoftware.SizeUp "Full Screen" -dict \
+	ComboCode -int 43 \
+	ComboFlags -int 1572864 \
+	Height -int 1 \
+	Width -int 1 \
+	X -int 0 \
+	Y -int 0
+
+# Send Window Center (ALT-CMD-m)
+defaults write com.irradiatedsoftware.SizeUp Center -dict \
+	ComboCode -int 46 \
+	ComboFlags -int 1572864
+
+# And resize to...
+defaults write com.irradiatedsoftware.SizeUp CenterResizeType -int 1 
+
+# Relative to Screen Size
+defaults write com.irradiatedsoftware.SizeUp CenterRelativeResizeEnabled -boolean true
+
+# w
+defaults write com.irradiatedsoftware.SizeUp CenterRelativeResizeWidth -int 75
+
+# h
+defaults write com.irradiatedsoftware.SizeUp CenterRelativeResizeHeight -int 75
+
+echo " "
+echo "Done!"

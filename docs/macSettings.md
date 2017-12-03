@@ -167,7 +167,9 @@ use different font for non-ASCII text: YES 13pt Menlo regular
 
 ## SizeUp keybindings
 
-(see screenshots)
+```
+./docs/SizeUp_setup
+```
 
 ## Dash installed docsets
 
