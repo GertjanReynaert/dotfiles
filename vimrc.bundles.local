@@ -1,6 +1,5 @@
 Plug 'Raimondi/delimitMate'
 Plug 'airblade/vim-gitgutter'
-Plug 'benekastah/neomake'
 Plug 'bling/vim-airline'
 Plug 'lilydjwg/colorizer'
 Plug 'rschmukler/pangloss-vim-indent'
