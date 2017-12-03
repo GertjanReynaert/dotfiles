@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Install fish
+brew install fish
+
+# Set it as default shell
+chsh -s /usr/local/bin/fish
