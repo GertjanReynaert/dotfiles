@@ -8,6 +8,11 @@
 * Highlight color:
   * CUSTOM, dark scale: left (brightest), green, on edge with yellow
   * R: 202, G: 248, B: 51
+
+```
+defaults write NSGlobalDomain AppleHighlightColor -string "0.791881 0.974023 0.200028"
+```
+
 * Sidebar icon size: MEDIUM
 * scrollbars: AUTO
 * click scrollbar: JUMP TO THE SPOT THAT'S CLICKED
