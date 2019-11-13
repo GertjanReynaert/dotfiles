@@ -1,3 +1,13 @@
+# Language config
+set -x LANG en_US.UTF-8
+set -x LC_ALL en_US.UTF-8
+set -x LC_NUMERIC en_US.UTF-8
+set -x LC_TIME en_US.UTF-8
+set -x LC_COLLATE en_US.UTF-8
+set -x LC_MONETARY en_US.UTF-8
+set -x LC_MESSAGES en_US.UTF-8
+
+
 # Applications
 set -xg PAGER "less"
 set -xg MANPAGER "$PAGER"
@@ -7,7 +17,7 @@ set -xg ANDROID_HOME $HOME/Library/Android/sdk
 set -xg PGHOST localhost
 
 # Paths
-set PATH /Applications/Postgres.app/Contents/Versions/9.5/bin $PATH
+set PATH /Applications/Postgres.app/Contents/Versions/latest/bin $PATH
 set PATH /usr/local/bin $PATH
 # set PATH /usr/local/sbin $PATH
 set PATH $HOME/.bin $PATH
@@ -26,3 +36,6 @@ status --is-interactive; and . (rbenv init -|psub)
 
 # NVIM
 export NVIM_TUI_ENABLE_TRUE_COLOR 0
+
+# Fastlane
+set -x PATH $HOME/.fastlane/bin $PATH
