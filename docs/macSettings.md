@@ -35,6 +35,10 @@ defaults write NSGlobalDomain AppleHighlightColor -string "0.791881 0.974023 0.2
 
 * Key Repeat: Fastest
 
+```
+defaults write -g InitialKeyRepeat -int 20
+```
+
 * Delay Until Repeat: Shortest
 
 * Enable key repeat
