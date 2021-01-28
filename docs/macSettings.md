@@ -2,9 +2,8 @@
 
 ## General
 
-* Appearance: BLUE
-* dark menubar and dock: YES
-* auto hide and show menu bar: NO
+* Appearance: AUTO
+* Accent color: blue
 * Highlight color:
   * CUSTOM, dark scale: left (brightest), green, on edge with yellow
   * R: 202, G: 248, B: 51
@@ -14,22 +13,164 @@ defaults write NSGlobalDomain AppleHighlightColor -string "0.791881 0.974023 0.2
 ```
 
 * Sidebar icon size: MEDIUM
+* Allow wallpaper tinting in windows: CHECK
+
 * scrollbars: AUTO
 * click scrollbar: JUMP TO THE SPOT THAT'S CLICKED
-* default browser: GOOGLE CHROME CANARY
-* close windows when quitting an app: YES
+
+* default browser: FIREFOX
+
+* Prefer tabs: FULL SCREEN
+* Ask to keep changes when closing documents: NO
+* Close windows when quitting an app: YES
 * recent items: 10
 * allow handoff: YES
-* use lcd font smoothing: YES
+
+## Desktop & screensaver
+
+* Desktop: AUTOMATIC (BIG SUR DEFAULT)
+
+* Screensaver: Brooklyn.saver (see dropbox wallpapers folder)
+
+## Dock & Menu Bar
+
+* Size: Smallest -> 1 increase step with Option key
+* Magnification: ON
+* Magnification size: 2/3
+* Position on screen: BOTTOM
+
+* Double click titlebar: zoom
+* Minimize applications in app icon: NO
+* Animate opening applications: YES
+* Auto hide/show dock: NO
+* Show indicators for open applications: YES
+* Show recent applications in Dock: NO
+
+* Icons: finder, iterm, chrome canary, downloads, trash
+
+### WiFi
+
+* Show in Menu Bar: NO
+
+### Bluetooth
+
+* Show in Menu Bar: NO
+
+### AirDrop
+
+* Show in Menu Bar: NO
+
+### Do Not Disturb
+
+* Show in Menu Bar: YES - WHEN ACTIVE
+
+### Keyboard Brightness
+
+* Show in Menu Bar: NO
+
+### Screen Mirroring
+
+* Show in Menu Bar: NO
+
+### Display
+
+* Show in Menu Bar: YES - WHEN ACTIVE
+
+### Sound
+
+* Show in Menu Bar: NO
+
+### Now Playing
+
+* Show in Menu Bar: NO
+
+### Accessibility
+
+* Show in Menu Bar: NO
+* Show in Control Center: NO
+
+### Battery
+
+* Show in Menu Bar: YES
+* Show in Control Center: NO
+* Show Percentage: YES
+
+### Fast User Switching
+
+* Show in Menu Bar: NO
+* Show in Control Center: NO
+
+### Clock
+
+* Show the day of the week: YES
+* Show date: NO
+
+* Time Options: DIGITAL
+* Use a 24-hour clock: YES
+* Flash the time separators: YES
+* Display the time with seconds: NO
+* Announce the time: NO
+
+### Spotlight
+
+* Show in Menu Bar: NO
+
+### Siri
+
+* Show in Menu Bar: NO
+
+### Time Machine
+
+* Show in Menu Bar: YES
 
 ## Mission control
 
-* Automatically rearrange Spaces based on most recent use: off
+* Automatically rearrange Spaces based on most recent use: NO
+* When switching to an application, switch to a Space with open windows for the
+application: YES
+* Group windows by application: NO
+* Displays have separate Spaces: YES
 
-## Trackpad
+* Mission control: ^+up-arrow
+* Application windows: ^+down-arrow
+* Show desktop: F11
 
-* Three finger drag:
-  SystemPreferences/accessibility/mouseAndTrackpad/trackpadOptions
+## Siri
+
+DISABLED
+
+## Spotlight
+
+Default
+
+## Language & Region
+
+* English
+
+* First Day of week: MONDAY
+* Calendar: GREGORIAN
+* Time format: 24HOUR
+* Temperature: CELCIUS
+
+## Notifications
+
+* Do Not Disturb: ON - 22h to 7h
+* When the display is sleeping: NO
+* when the screen is locked: NO
+* When mirroring to TV's and projectors: YES
+
+* Allow calls from everyone: NO
+* Allow repeated calls: NO
+
+## Accessibility
+
+* Pointer Control -> Mouse & Trackpad -> Trackpad options -> Enable dragging:
+ON - Three finger drag
+
+## Security & Privacy
+
+* Require password after sleep or screen saver begins: YES - IMMEDIATELY
+* Use apple watch to unlock: YES
 
 ## Keyboard
 
@@ -47,11 +188,21 @@ defaults write -g InitialKeyRepeat -int 20
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 ```
 
+## Trackpad
+
+* (Already in Accessibility) Three finger drag:
+  SystemPreferences/accessibility/mouseAndTrackpad/trackpadOptions
+
 ### Point and click
 
-* Look up & data detectors: NO
+* Look up & data detectors: YES
 * Secondary click: YES, click or tap with two fingers
 * Tap to click: YES
+
+* Click: MEDIUM
+* Tracking speed: 4
+
+* Force click & haptic feedback: YES
 
 ### Scroll & zoom
 
@@ -62,46 +213,59 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 ### More gestures
 
-(All checked)
+* Swipe between pages: NO
+* All the rest: YES
 
 ## Status bar
 
 (rtl)
 
-* notification center
-* spotlight
-* battery (show percentage)
-* time (digital, 24h clock, no date related info, no seconds, no blinking :)
-* wifi
-* bluetooth
-* audio level
-* dropbox
-* one password mini
+* Time (digital, 24h clock, weekday, no seconds but blinking :)
+* Control Center
+* Time Machine
+* Battery (show percentage)
 
-### hide
+Third party:
 
-* Sizeup
-* airplay
+* Audio balance
+* Postgresql
+* 1Password
+* Dropbox
 
 ## Dock
 
-* Icons: finder, iterm, chrome canary, downloads, trash
-* Icon size: +- 25%
-* No magnification
-* Position: left
-* Minimize effect: genie
+### Apps
 
-* Double click titlebar: zoom
-* Minimize applications in app icon: NO
-* Animate opening applications: YES
-* Auto hide/show dock: NO
-* Show indicators for open applications: NO
+* Finder
+* Activity Monitor
+* System Preferences
+
+(Space)
+
+* Firefox
+* Safari
+
+(Space)
+
+* iTerm
+* VSCode
+* XCode
+* Simulator
+* Figma
+
+(Space)
+
+* Spark
+* Slack
+* 1Password
 
 ### Downloads folder
 
-* sort by DATE ADDED
-* display as FOLDER
-* view content as AUTOMATIC
+* Replace with DESKTOP folder
+
+* Sort by KIND
+* Display as FOLDER
+* View content as GRID
 
 ## Finder
 
@@ -110,19 +274,19 @@ defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 #### Favorites
 
 * Desktop
-* Downloads
-* gertjanreynaert
 * Applications
 * Dropbox
-* iCloud Drive
-* AirDrop
+* Documents
 * Code
+* Downloads
+* AirDrop
+* gertjanreynaert
 
-#### Devices
+#### iCloud Drive
 
 show
 
-#### Shared
+#### Locations
 
 show
 
@@ -133,13 +297,23 @@ hide
 ### ButtonBar
 
 * Back buttons
-* Flex space
+
+(Space)
+
+* New folder
+
+(Space)
+
 * Path
 * Action
 * Share
-* Space
+
+(Space)
+
 * View
-* Flex space
+
+(Space)
+
 * Search
 
 ## Apps to install
@@ -149,6 +323,8 @@ hide
 * Xcode
 * Unarchiver
 * iWork (Pages, Numbers, Keynote)
+* balance lock
+* DevCleaner for Xcode
 
 ### downloads
 
@@ -156,25 +332,20 @@ hide
 * [Iterm2](https://iterm2.com/downloads.html)
 * [Iterm2 cobalt2 color theme](https://raw.githubusercontent.com/wesbos/Cobalt2-iterm/master/cobalt2.itermcolors)
   (click right -> save as...)
-* [SizeUp](http://www.irradiatedsoftware.com/sizeup/) (until
-  [Spectacles](https://www.spectacleapp.com/) gets margins and spacers)
-* [Google Chrome canary](https://www.google.com/chrome/browser/canary.html)
-* [Google Chrome (Stable)](https://www.google.com/chrome/browser/desktop/index.html)
-* [Firefox (Stable)](https://www.mozilla.org/en-US/firefox/new/?product=firefox-3.6.8&os=osx%E2%8C%A9=en-US)
+* [RectangleApp](https://rectangleapp.com/)
+* [Firefox (Stable)](https://www.mozilla.org/en-US/firefox/new/)
 * [Dropbox](https://www.dropbox.com/downloading)
-* [OnePassword](https://agilebits.com/downloads)
+* [1Password](https://1password.com/downloads/mac/)
 * [Spotify](https://www.spotify.com/be-nl/download/mac/)
 * [VSCode](https://code.visualstudio.com/)
-* [ExpoXDE](https://expo.io/)
 * [Android Studio](https://developer.android.com/studio/index.html)
 * [Genymotion](https://www.genymotion.com/fun-zone/)
 * [PostgresApp](https://postgresapp.com/documentation/all-versions.html)
 * [Slack](https://slack.com/downloads/osx)
-* [Skype](https://www.skype.com/nl/download-skype/skype-for-computer/)
-* [Dash](https://kapeli.com/dash)
+* [Figma](https://www.figma.com/downloads/)
+* [Zoom](https://zoom.us/download)
 
-* [Docker](https://docs.docker.com/docker-for-mac/)
-* [Citrix](https://www.citrix.nl/go/receiver.html)
+* [AppCleaner](https://freemacsoft.net/appcleaner/)
 
 ## Iterm2 settings
 
@@ -185,26 +356,3 @@ Import cobalt2 color scheme
 ### Text
 
 use different font for non-ASCII text: YES 13pt Menlo regular
-
-## SizeUp keybindings
-
-```
-./docs/SizeUp_setup
-```
-
-## Dash installed docsets
-
-* JavaScript
-* React
-* reactjs/redux (github)
-* reactjs/react-redux (github)
-* ReactTraining/react-router (github)
-* facebook/react-native (github)
-* styled-components/styled-components (github)
-* Ruby
-* Ruby on Rails 4
-* Ruby on Rails 5
-* CSS
-* Sass
-* PostgreSQL
-* MongoDB
