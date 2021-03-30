@@ -1,3 +1,33 @@
+Laptop Setup
+============
+
+## Install brew
+
+Run the bash script from the [brew.sh](https://brew.sh/) homepage
+
+## Install fish
+
+```
+brew install fish
+```
+
+Set Fish as default shell (check docs/fish_setup)
+
+Set up Fish pure theme
+
+Do the manual install of pure Fish from the [github repo](https://github.com/pure-fish/pure#manually)
+
+## Install tools
+
+```
+brew install tmux
+brew install vim
+brew install git
+brew install diff-so-fancy
+brew install rcm
+brew install watchman
+```
+
 Dotfiles
 ========
 
@@ -12,12 +42,6 @@ git clone https://github.com/thoughtbot/dotfiles.git dotfiles
 git clone https://github.com/GertjanReynaert/dotfiles.git dotfiles-local
 env RCRC=$HOME/dotfiles-local/rcrc rcup
 ```
-
-## Git
-
-### fancy diffs
-
-[diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 
 ## Neovim
 
