@@ -9,7 +9,7 @@
   wip = !git add -A && git commit -m 'temp(WIP): work in progress [ci skip]'
   cleanup = !git add -A && git commit -m 'temp(WIP): cleanup'
 
-  cm = !sh -c 'git cz'
+  cm = !sh -c 'git commit'
   db = !sh -c 'git checkout master && git pull origin master && git branch -d $1 && git fetch' -
 
   rs = !sh -c 'git reset HEAD~$1' -
