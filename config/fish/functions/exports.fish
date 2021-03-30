@@ -21,9 +21,16 @@ set PATH /usr/local/bin $PATH
 set PATH $HOME/.bin $PATH
 # set PATH $PATH $HOME/bin
 
+# Path rbenv
+# set PATH $HOME/.rbenv/bin $PATH
+set PATH $HOME/.rbenv/shims $PATH
+
 # Path android
 set PATH $PATH $ANDROID_HOME/tools
 set PATH $PATH $ANDROID_HOME/platform-tools
+
+# Rbenv
+status --is-interactive; and . (rbenv init -|psub)
 
 # NVIM
 export NVIM_TUI_ENABLE_TRUE_COLOR 0
