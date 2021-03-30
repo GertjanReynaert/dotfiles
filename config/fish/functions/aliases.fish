@@ -10,8 +10,8 @@ alias cpu "vtop"
 alias monitor "vtop"
 alias activity "vtop"
 
-alias intuo "cd ~/Code/Intuo/intuo"
-alias intuo-mobile "cd ~/Code/Intuo/intuo-mobile"
-alias projects "cd ~/Code/gertjanreynaert"
+alias code "cd ~/Code"
+alias hoby "cd ~/Code/gertjanreynaert"
+alias work "cd ~/Code/ITP"
 
 alias be "bundle exec"
