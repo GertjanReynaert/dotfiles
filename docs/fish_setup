@@ -3,5 +3,8 @@
 # Install fish
 brew install fish
 
+# Register Fish as an official shell
+echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+
 # Set it as default shell
 chsh -s /usr/local/bin/fish
