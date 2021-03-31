@@ -26,7 +26,9 @@ set PATH $HOME/.bin $PATH
 set PATH $HOME/.rbenv/shims $PATH
 
 # Path android
+set PATH $PATH $ANDROID_HOME/emulator
 set PATH $PATH $ANDROID_HOME/tools
+set PATH $PATH $ANDROID_HOME/tools/bin
 set PATH $PATH $ANDROID_HOME/platform-tools
 
 # Rbenv
