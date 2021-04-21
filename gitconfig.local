@@ -6,10 +6,10 @@
   email = gertjan.reynaert@gmail.com
 
 [alias]
-  wip = !git add -A && git commit -m 'temp(WIP): work in progress [ci skip]'
-  cleanup = !git add -A && git commit -m 'temp(WIP): cleanup'
+  wip = !git add -A && git commit --no-verify -m '🚧 work in progress [ci skip]'
+  cleanup = !git add -A && git commit -m '🚧 cleanup'
 
-  cm = !sh -c 'git commit'
+  cm = !sh -c 'gitmoji --commit'
   db = !sh -c 'git checkout master && git pull origin master && git branch -d $1 && git fetch' -
 
   rs = !sh -c 'git reset HEAD~$1' -
