@@ -20,6 +20,7 @@
   hist = log --pretty=format:\"%C(green)%ad%Creset %C(red)%h%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset\" --abbrev-commit --date=iso
   stat = !sh -c 'git diff --shortstat $1' -
   recent = !sh -c 'git for-each-ref --sort=committerdate  refs/heads/ --format=\"%(committerdate:short) %(refname:short)\"' -
+  clean-branches = !sh -c 'git remote prune origin && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -D' -
 
 [color]
     ui = true
