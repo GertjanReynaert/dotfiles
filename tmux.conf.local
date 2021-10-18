@@ -58,3 +58,7 @@ set-option -g display-panes-colour blue #blue
 # clock
 set-window-option -g clock-mode-colour colour220 #yellow
 set -g status-interval 1
+
+# Fig Tmux Integration: Enabled
+source-file ~/.fig/tmux
+# End of Fig Tmux Integration
