@@ -15,8 +15,6 @@ set -xg TERM "xterm-256color"
 set -xg ANDROID_HOME $HOME/Library/Android/sdk
 set -xg ANDROID_SDK_ROOT $HOME/Library/Android/sdk
 
-set -x JAVA_HOME (/usr/libexec/java_home) # https://superuser.com/questions/1401673/how-to-set-a-specific-version-of-java-as-java-home-in-fish-in-macos
-
 # Paths
 set PATH /usr/local/bin $PATH
 # set PATH /usr/local/sbin $PATH
