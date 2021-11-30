@@ -2,8 +2,6 @@ if &compatible
   set nocompatible
 end
 
-let g:has_async = v:version >= 800 || has('nvim')
-
 call plug#begin('~/.vim/bundle')
 
 " Define bundles via Github repos
@@ -37,9 +35,7 @@ Plug 'tpope/vim-surround'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/tComment'
 
-if g:has_async
-  Plug 'dense-analysis/ale'
-endif
+Plug 'dense-analysis/ale'
 
 Plug 'Raimondi/delimitMate'
 Plug 'airblade/vim-gitgutter'
