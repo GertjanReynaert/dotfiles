@@ -1,4 +1,5 @@
 function mkdir
+  # command is needed to avoid having errors of calling ourselves
   command mkdir -p "$argv"
   cd "$argv[1]"
 end
