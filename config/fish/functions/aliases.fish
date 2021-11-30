@@ -1,6 +1,5 @@
 alias ll "ls -al"
 alias ln "ln -v"
-alias mkdir "mkdir -p"
 alias e "$EDITOR"
 
 alias claer "clear"

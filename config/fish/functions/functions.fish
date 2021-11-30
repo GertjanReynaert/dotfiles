@@ -1,5 +1,6 @@
-function mkd
-  mkdir -p "$argv"; and cd "$argv[1]"
+function mkdir
+  command mkdir -p "$argv"
+  cd "$argv[1]"
 end
 
 function addDockSpace
