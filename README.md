@@ -1,5 +1,4 @@
-Laptop Setup
-============
+# Laptop Setup
 
 ## Install brew
 
@@ -7,7 +6,7 @@ Run the bash script from the [brew.sh](https://brew.sh/) homepage
 
 ## Install fish
 
-```
+```sh
 brew install fish
 ```
 
@@ -19,7 +18,7 @@ Do the manual install of pure Fish from the [github repo](https://github.com/pur
 
 ## Install tools
 
-```
+```sh
 brew install tmux
 brew install vim
 brew install git
@@ -28,32 +27,22 @@ brew install rcm
 brew install watchman
 ```
 
-Dotfiles
-========
+## Dotfiles
 
-*A set of vim, zsh, git, and tmux configuration files.*
+_A set of vim, fish, git, and tmux configuration files._
 
-Use in combination with [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles).
+Inspired by [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles).
 
-## Usage
+### Usage
 
+Clone dotfiles
+
+```sh
+git clone https://github.com/GertjanReynaert/dotfiles.git
 ```
-git clone https://github.com/thoughtbot/dotfiles.git dotfiles
-git clone https://github.com/GertjanReynaert/dotfiles.git dotfiles-local
-env RCRC=$HOME/dotfiles-local/rcrc rcup
-```
 
-## Neovim
+Register dotfiles folder for rcup installation
 
-### install
-
-Install with [brew](https://github.com/neovim/homebrew-neovim/blob/master/README.md)
-
-### setup
-
-Symlink vim setup to nvim setup
-
-```
-ln -s $HOME/.vim $HOME/.nvim
-ln -s $HOME/dotfiles/vimrc $HOME/.nvimrc
+```sh
+env RCRC=$HOME/dotfiles/rcrc rcup
 ```
