@@ -5,6 +5,9 @@ source "$HOME/.config/fish/functions/exports.fish"
 source "$HOME/.config/fish/functions/aliases.fish"
 source "$HOME/.config/fish/functions/functions.fish"
 
+source /usr/local/opt/asdf/asdf.fish
+source "$HOME/.asdf/plugins/java/set-java-home.fish"
+
 # THEME PURE
 # Use this installer: https://github.com/rafaelrinaldi/pure#manually
 source /Users/gertjanreynaert/.config/fish/functions/theme-pure/conf.d/pure.fish
@@ -19,4 +22,3 @@ set pure_color_red (set_color red)
 set pure_color_yellow (set_color yellow)
 set -g fish_user_paths "/usr/local/opt/node@14/bin" $fish_user_paths
 
-source /usr/local/opt/asdf/asdf.fish
