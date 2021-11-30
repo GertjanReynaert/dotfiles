@@ -166,10 +166,99 @@ set spellfile=$HOME/.vim-spell-en.utf-8.add
 " Autocomplete with dictionary words when spell check is on
 set complete+=kspell
 
-" Always use vertical diffs
-" set diffopt+=vertical
+" Set colorscheme
+colorscheme cobalt2
 
-" Local config
-if filereadable($HOME . "/.vimrc.local")
-  source ~/.vimrc.local
-endif
+" Highlight current line
+set cursorline
+
+" Relative line numbers
+set relativenumber
+
+" Set windowsettings
+set winwidth=84
+set winheight=5
+set winminheight=5
+set winheight=999
+
+" do not wrap lines if they exceed pane width
+" most lines are under 80 chars, and this enables better visibility in small
+" side by side panes, where otherwise a line could get wrapped over 3 lines
+set nowrap
+
+" set vertical split character (char between two side by side editors)
+set fillchars+=vert:\│
+
+" Highlight all matches after entering search pattern
+set hlsearch
+
+" Automatically update file unless buffer has unsaved changes
+set autoread
+
+" Case insensitive pattern matching
+set ignorecase
+
+" Overrides ignorecase if pattern contains upcase
+set smartcase
+
+" When at 3 spaces and I hit >>, go to 4, not 5
+set shiftround
+
+" Keep 5 lines of context when scrolling
+set scrolloff=5
+
+" Don't add the comment prefix when I hit enter or o/O on a comment line.
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
+" Move one displayed line at a time, default is one fysical line
+nmap k gk
+nmap j gj
+
+" Bind K to grep word under cursor
+nnoremap K :grep! "\b<C-R><C-W>\b"<CR>:cw<CR><CR>
+
+" Disable Ex mode
+map Q <Nop>
+
+" Allow undo history to persist after closing buffer
+if has('persistent_undo')
+  set undodir=~/.vim/_undo
+  set undofile
+end
+
+" Shortcuts
+map <C-n> :NERDTreeToggle<CR>
+map <C-t> <esc>:tabnew<CR>
+map <C-s> <esc>:w<CR>
+imap <C-s> <esc>:w<CR>
+nn <F7> :setlocal spell! spell?<CR>
+map <F10> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<' . synIDattr(synID(line("."),col("."),0),"name") . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name") . ">"<CR>
+
+" Embrace typos
+command! Q q
+command! W w
+command! Wq wq
+
+" Tell NERD tree which files to ignore
+let NERDTreeIgnore=['node_modules$']
+
+" Tell Netrw which files to ignore
+let g:netrw_list_hide= '.*\.swp$,'
+let g:netrw_list_hide.= '\.git,\.gitkeep,\.keep,'
+let g:netrw_list_hide.= 'node_modules,'
+let g:netrw_list_hide.= '\.gem,\.bundle,'
+let g:netrw_list_hide.= '\.DS_Store,'
+let g:netrw_list_hide.= 'tmp,dist,log,coverage'
+
+set wildignore=log/**,node_modules/**,target/**,tmp/**,dist/**,*.rbc
+set wildignore+=*.o,*.out,*.obj,.git,*.rbc,*.rbo,*.class,.svn,*.gem
+set wildignore+=*.zip,*.tar.gz,*.tar.bz2,*.rar,*.tar.xz
+set wildignore+=*/vendor/gems/*,*/vendor/cache/*,*/.bundle/*,*/.sass-cache/*
+set wildignore+=*.swp,*~,._*
+
+" Activate jsx in .js files too
+let g:jsx_ext_required = 0
+
+" Airline separetors
+let g:airline_left_sep = ''
+let g:airline_right_sep = ''
