@@ -8,3 +8,9 @@ function addDockSpace
   defaults write com.apple.dock persistent-apps -array-add "{"tile-type"="spacer-tile";}"; and killall Dock
 end
 
+function diffImage
+  # install imagemagick if compare is unavailable
+  type -q compare; or brew install imagemagick
+
+  compare ~/Desktop/$argv-before.png ~/Desktop/$argv-after.png -compose src ~/Desktop/$argv-diff.png
+end
