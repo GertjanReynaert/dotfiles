@@ -15,6 +15,9 @@ alias cpu "vtop"
 alias monitor "vtop"
 alias activity "vtop"
 
+alias ip "dig +short myip.opendns.com @resolver1.opendns.com"
+alias localip "ipconfig getifaddr en0"
+
 alias back "cd -"
 alias dev "cd ~/Code"
 alias hobby "cd ~/Code/gertjanreynaert"
