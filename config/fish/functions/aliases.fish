@@ -20,6 +20,7 @@ alias dev "cd ~/Code"
 alias hobby "cd ~/Code/gertjanreynaert"
 alias personal "hobby"
 alias work "cd ~/Code/ITP"
+alias dotfiles "cd ~/dotfiles"
 
 alias path "echo $PATH | tr -s ':' '\n'"
 
