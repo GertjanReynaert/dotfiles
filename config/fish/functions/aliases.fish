@@ -2,7 +2,6 @@ alias ll "ls -al"
 alias ln "ln -v"
 alias mkdir "mkdir -p"
 alias e "$EDITOR"
-alias v "$VISUAL"
 
 alias claer "clear"
 alias clera "clear"
