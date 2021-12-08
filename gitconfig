@@ -37,7 +37,8 @@
 
 [alias]
   aa = add --all
-  branches = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
+  unstage = restore --staged
+  unstageall = unstage .
   co = checkout
   back = checkout -
   st = status
@@ -54,6 +55,7 @@
   l = !git log --graph --pretty=colored
   hist = log --pretty=format:\"%C(green)%ad%Creset %C(red)%h%Creset -%C(yellow)%d%Creset %s %C(bold blue)<%an>%Creset\" --abbrev-commit --date=iso
   stat = !sh -c 'git diff --shortstat $1' -
+  branches = for-each-ref --sort=-committerdate --format=\"%(color:blue)%(authordate:relative)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\" refs/remotes
   recent = !sh -c 'git for-each-ref --sort=committerdate  refs/heads/ --format=\"%(committerdate:short) %(refname:short)\"' -
   clean-branches = !sh -c 'git remote prune origin && git branch -vv | grep ': gone]' | awk '{print $1}' | xargs -r git branch -D' -
   current-branch = !sh -c 'set -e && git rev-parse --abbrev-ref HEAD'
