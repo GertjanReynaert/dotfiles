@@ -25,7 +25,13 @@ brew install git
 brew install diff-so-fancy
 brew install rcm
 brew install watchman
+brew install the_silver_searcher
 ```
+
+### the_silver_searcher (ag)
+
+This dependency is needed for the ctrl-p search to work properly in vim.
+Properly as in: correctly ignoring node_modules when searching files
 
 ## Dotfiles
 
