@@ -1,5 +1,16 @@
-alias ll "ls -al"
+alias ls "exa"
+alias ll "exa --long --header --git"
 alias ln "ln -v"
+
+alias list "ls"
+alias listlong "ll"
+alias move "mv"
+alias copy "cp"
+alias link "ln"
+
+alias makeExecutable "chmod +x"
+alias mime "file --mime-type"
+
 alias e "$EDITOR"
 
 alias claer "clear"
@@ -17,6 +28,7 @@ alias activity "vtop"
 
 alias ip "dig +short myip.opendns.com @resolver1.opendns.com"
 alias localip "ipconfig getifaddr en0"
+alias nettest "ping www.google.be"
 
 alias back "cd -"
 alias dev "cd ~/Code"
