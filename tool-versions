@@ -1,5 +1,5 @@
 ruby 2.7.2
 python 3.9.5
-nodejs 14.17.3
+nodejs lts-gallium
 java temurin-8.0.312+7
 
