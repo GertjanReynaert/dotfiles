@@ -26,8 +26,7 @@ alias cpu "npx vtop"
 alias monitor "npx vtop"
 alias activity "npx vtop"
 
-alias ip "dig +short myip.opendns.com @resolver1.opendns.com"
-alias localip "ipconfig getifaddr en0"
+# alias ip => check functions
 alias nettest "ping www.google.be"
 
 alias back "cd -"

@@ -14,3 +14,11 @@ function diffImage
 
   compare ~/Desktop/$argv-before.png ~/Desktop/$argv-after.png -compose src ~/Desktop/$argv-diff.png
 end
+
+function ip
+  set localip (ipconfig getifaddr en0)
+  set remoteip (dig +short myip.opendns.com @resolver1.opendns.com)
+
+  echo "Local ip:  $localip"
+  echo "Remote ip: $remoteip"
+end
