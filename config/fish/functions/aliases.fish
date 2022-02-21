@@ -28,6 +28,8 @@ alias activity "npx vtop"
 
 # alias ip => check functions
 alias nettest "ping www.google.be"
+alias fast "npx fast-cli --upload"
+alias speedtest "fast"
 
 alias back "cd -"
 alias dev "cd ~/Code"
