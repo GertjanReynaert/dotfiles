@@ -1,5 +1,4 @@
-ruby 2.7.2
+ruby 3.1.1
 python 3.9.5
 nodejs lts-gallium
-java temurin-8.0.312+7
-
+java zulu-11.54.25
