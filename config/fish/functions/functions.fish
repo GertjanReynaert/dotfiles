@@ -22,3 +22,7 @@ function ip
   echo "Local ip:  $localip"
   echo "Remote ip: $remoteip"
 end
+
+function find_cyclical_dependencies
+  npx madge --ts-config tsconfig.json --circular --extensions ts,tsx src
+end
