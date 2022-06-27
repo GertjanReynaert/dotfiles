@@ -16,6 +16,7 @@ set -xg ANDROID_HOME $HOME/Library/Android/sdk
 set -xg ANDROID_SDK_ROOT $HOME/Library/Android/sdk
 
 # Paths
+# TODO: check out this fish method for paths: https://fishshell.com/docs/current/cmds/fish_add_path.html
 set PATH /usr/local/bin $PATH
 # set PATH /usr/local/sbin $PATH
 set PATH $HOME/.bin $PATH

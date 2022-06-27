@@ -12,6 +12,15 @@ brew install fish
 
 Set Fish as default shell (check docs/fish_setup)
 
+## Install fish theme with Oh My Posh (still WIP)
+
+```sh
+brew tap jandedobbeleer/oh-my-posh
+brew install oh-my-posh
+
+oh-my-posh --init --shell fish --config (brew --prefix oh-my-posh)/themes/pure.omp.json | source
+```
+
 Set up Fish pure theme
 
 Do the manual install of pure Fish from the [github repo](https://github.com/pure-fish/pure#manually)
