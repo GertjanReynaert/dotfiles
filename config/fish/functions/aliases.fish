@@ -38,5 +38,8 @@ alias personal "hobby"
 alias work "cd ~/Code/ITP"
 alias dotfiles "cd ~/dotfiles"
 
+alias iosdevices "xcrun xctrace list devices"
+alias androiddevices "adb devices"
+
 alias path "echo $PATH | tr -s ':' '\n'"
 
