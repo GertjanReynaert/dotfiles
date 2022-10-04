@@ -99,6 +99,8 @@
 
 [merge]
   ff = only
+  # ff flag is used for merging branches into each other
+  # ff = false
 
 [fetch]
   prune = true
@@ -114,9 +116,16 @@
 [user]
   name = Gertjan Reynaert
   email = gertjan.reynaert@gmail.com
+  signingkey = ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCwZpSFcb88DsjMJXJjmmvGA+IItV0v14ULqhvrM2f4eHHqAxBS3y/TrOn2+RdulAjD3RjSxvOyZP8vFFfHNgPT1c2UqreTAZmPDMb0AC/VE3oVYBvV1rpeS2yQFPYU7ifTZjSgerNvl65jlp75F7YhArKHvFNQRBoXup7hIez6oPvWrCfUipUYIyU7VA45sRC8SCsVNkIudBmm2vX7zC7j8KVzCMsWjBhJ3ZCmNnUF9ELg54su9kWLc+NxSQdQRgxOKTmlicTttG+6NwqInb0OGHlSD47J7Ls+VZlWN8+Wbxk9ii6s9ysU+jux8ML66pccaVHlAwBo3+8pVEkTeezr
 
 [credential]
   helper = osxkeychain
 
 [pretty]
   colored = format:%Cred%h%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
+[gpg]
+ format = ssh
+[gpg "ssh"]
+  program = /Applications/1Password.app/Contents/MacOS/op-ssh-sign
+[commit]
+  gpgsign = true
