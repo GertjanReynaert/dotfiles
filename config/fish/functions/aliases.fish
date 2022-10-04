@@ -31,6 +31,7 @@ alias nettest "ping www.google.be"
 alias fast "npx fast-cli --upload"
 alias speedtest "fast"
 
+# folder navigation
 alias back "cd -"
 alias dev "cd ~/Code"
 alias hobby "cd ~/Code/gertjanreynaert"
@@ -38,6 +39,7 @@ alias personal "hobby"
 alias work "cd ~/Code/ITP"
 alias dotfiles "cd ~/dotfiles"
 
+# Physical device & simulator detection
 alias iosdevices "xcrun xctrace list devices"
 alias androiddevices "adb devices"
 
