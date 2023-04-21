@@ -52,6 +52,8 @@
   wip = !git add -A && git commit --no-verify -m '🚧 work in progress [ci skip]'
   cleanup = !git add -A && git commit -m '🚧 cleanup'
 
+  puhs = push
+
   uncommit = !sh -c 'git reset HEAD~$1' -
   rs = uncommit
 
