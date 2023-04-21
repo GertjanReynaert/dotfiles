@@ -20,5 +20,4 @@ set pure_color_green (set_color magenta)
 set pure_color_normal (set_color white)
 set pure_color_red (set_color red)
 set pure_color_yellow (set_color yellow)
-set -g fish_user_paths "/usr/local/opt/node@14/bin" $fish_user_paths
 
