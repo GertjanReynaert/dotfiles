@@ -53,7 +53,7 @@ Inspired by [thoughtbot/dotfiles](https://github.com/thoughtbot/dotfiles).
 Clone dotfiles
 
 ```sh
-git clone https://github.com/GertjanReynaert/dotfiles.git
+git clone git@github.com:GertjanReynaert/dotfiles.git
 ```
 
 Register dotfiles folder for rcup installation
