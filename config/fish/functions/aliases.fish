@@ -40,8 +40,8 @@ alias work "cd ~/Code/ITP"
 alias dotfiles "cd ~/dotfiles"
 
 # Physical device & simulator detection
-alias iosdevices "xcrun xctrace list devices"
-alias androiddevices "adb devices"
+alias ios_devices "xcrun xctrace list devices"
+alias android_devices "adb devices"
 
 alias path "echo $PATH | tr -s ':' '\n'"
 
