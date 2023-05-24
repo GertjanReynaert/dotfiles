@@ -35,6 +35,7 @@ brew install diff-so-fancy
 brew install rcm
 brew install watchman
 brew install the_silver_searcher
+brew install exa
 ```
 
 ### the_silver_searcher (ag)
