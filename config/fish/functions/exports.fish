@@ -15,23 +15,21 @@ set -xg TERM "xterm-256color"
 set -xg ANDROID_HOME $HOME/Library/Android/sdk
 set -xg ANDROID_SDK_ROOT $HOME/Library/Android/sdk
 
-# Paths
-# TODO: check out this fish method for paths: https://fishshell.com/docs/current/cmds/fish_add_path.html
-set PATH /usr/local/bin $PATH
-# set PATH /usr/local/sbin $PATH
-set PATH $HOME/.bin $PATH
-# set PATH $PATH $HOME/bin
-
-set PATH $HOME/Library/Python/3.9/bin $PATH
-
-# Path android
-set PATH $PATH $ANDROID_HOME/emulator
-set PATH $PATH $ANDROID_HOME/tools
-set PATH $PATH $ANDROID_HOME/tools/bin
-set PATH $PATH $ANDROID_HOME/platform-tools
-
 # NVIM
 export NVIM_TUI_ENABLE_TRUE_COLOR 0
 
-# Fastlane
-set -x PATH $HOME/.fastlane/bin $PATH
+# Paths
+set PATH /usr/local/bin $PATH
+set PATH $HOME/.bin $PATH
+
+# Fish method for paths: https://fishshell.com/docs/current/cmds/fish_add_path.html
+
+# Path android
+fish_add_path $ANDROID_HOME/emulator
+fish_add_path $ANDROID_HOME/tools
+fish_add_path $ANDROID_HOME/tools/bin
+fish_add_path $ANDROID_HOME/platform-tools
+
+fish_add_path /opt/homebrew/opt/crowdin@3/bin
+fish_add_path $HOME/.maestro/bin
+fish_add_path $HOME/.fastlane/bin
