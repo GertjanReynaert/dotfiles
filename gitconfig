@@ -59,7 +59,7 @@
 
   # Branching
   co = checkout
-  back = checkout -
+  back = switch -
   current-branch = rev-parse --abbrev-ref HEAD
   rename-branch = !sh -c 'set -e && old=$(git current-branch) && git branch -m "$old" "$1" && git push origin --set-upstream "$1" && git push origin --delete "$old" '
   recent = for-each-ref --sort=committerdate  refs/heads/ --format=\"%(color:blue)%(committerdate:short)\t%(color:red)%(authorname)\t%(color:white)%(color:bold)%(refname:short)\"
