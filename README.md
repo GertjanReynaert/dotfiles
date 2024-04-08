@@ -41,6 +41,8 @@ brew install coreutils
 brew install curl
 brew install git
 brew install asdf
+
+brew install podman
 ```
 
 ### the_silver_searcher (ag)
