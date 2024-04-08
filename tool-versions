@@ -1,5 +1,5 @@
 ruby 3.1.1
 python 3.9.5
-nodejs lts-gallium
+nodejs 21.7.2
 java zulu-11.54.25
 golang 1.19.8
