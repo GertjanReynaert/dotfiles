@@ -4,11 +4,11 @@
 #   cd "$argv[2]"
 # end
 
-function addDockSpace
+function add_dock_space
   defaults write com.apple.dock persistent-apps -array-add "{"tile-type"="spacer-tile";}"; and killall Dock
 end
 
-function diffImage
+function diff_image
   # install imagemagick if compare is unavailable
   type -q compare; or brew install imagemagick
 
@@ -32,7 +32,7 @@ function restart_adb
   adb start-server
 end
 
-function run_all_device_sizes
+function run_ios_devices
   # iPhone SE
   npm run ios:debug -- --udid="D1BD4DF5-6AAC-442B-8A3F-98C9462D5A82"
 
@@ -44,6 +44,10 @@ function run_all_device_sizes
 
   # iPhone 14 Plus
   npm run ios:debug -- --udid="8F3624D9-1C3E-46A7-94D6-9CD7215492AD"
+end
+
+function run_all_device_sizes
+  run_ios_devices
 
   # android
   npm run android:debug
