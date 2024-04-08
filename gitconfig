@@ -103,6 +103,7 @@
   ff = only
   # ff flag is used for merging branches into each other
   # ff = false
+  conflictStyle = zdiff3
 
 [fetch]
   prune = true
