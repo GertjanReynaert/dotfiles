@@ -36,6 +36,11 @@ brew install rcm
 brew install watchman
 brew install the_silver_searcher
 brew install exa
+
+brew install coreutils
+brew install curl
+brew install git
+brew install asdf
 ```
 
 ### the_silver_searcher (ag)
