@@ -19,19 +19,3 @@ set -xg SSH_AUTH_SOCK ~/Library/Group\ Containers/2BUA8C4S2C.com.1password/t/age
 
 # NVIM
 export NVIM_TUI_ENABLE_TRUE_COLOR 0
-
-# Paths
-set PATH /usr/local/bin $PATH
-set PATH $HOME/.bin $PATH
-
-# Fish method for paths: https://fishshell.com/docs/current/cmds/fish_add_path.html
-
-# Path android
-fish_add_path $ANDROID_HOME/emulator
-fish_add_path $ANDROID_HOME/tools
-fish_add_path $ANDROID_HOME/tools/bin
-fish_add_path $ANDROID_HOME/platform-tools
-
-fish_add_path /opt/homebrew/opt/crowdin@3/bin
-fish_add_path $HOME/.maestro/bin
-fish_add_path $HOME/.fastlane/bin
