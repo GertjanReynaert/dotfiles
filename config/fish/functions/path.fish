@@ -1,6 +1,6 @@
 # Paths
-set PATH /usr/local/bin $PATH
-set PATH $HOME/.bin $PATH
+set --global --export --prepend PATH /usr/local/bin
+set --global --export --prepend PATH $HOME/.bin
 
 source (brew --prefix asdf)/libexec/asdf.fish
 source "$HOME/.asdf/plugins/java/set-java-home.fish"
