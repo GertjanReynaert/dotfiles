@@ -43,5 +43,8 @@ alias dotfiles "cd ~/dotfiles"
 alias ios_devices "xcrun xctrace list devices"
 alias android_devices "adb devices"
 
-alias path "echo $PATH | tr -s ':' '\n'"
+# Replaced by function, as this alias dropped the first line and the function does not
+# This alias also used the zsh output which has : separators while the function
+# uses the fish echo output which has spaces as separators
 
+# alias path "echo $PATH | tr -s ':' '\n'"

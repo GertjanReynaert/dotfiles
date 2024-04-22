@@ -51,3 +51,7 @@ function run_both
   npm run ios:debug
   npm run android:debug
 end
+
+function path
+  echo $PATH | tr -s " " "\n"
+end
