@@ -1,7 +1,13 @@
 #!/usr/bin/env bash
 
+# Install npm
 npm install -g npm
-npm install -g yarn
 
-yarn global add create-react-app react-native-cli prettier semantic-release
+# Install Yarn
+# https://yarnpkg.com/getting-started/install
+corepack enable
+
+npm install -g \
+  commitizen \
+  gitmoji-cli
 
