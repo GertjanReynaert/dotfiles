@@ -12,7 +12,7 @@ fish_add_path $ANDROID_HOME/tools
 fish_add_path $ANDROID_HOME/tools/bin
 fish_add_path $ANDROID_HOME/platform-tools
 
-fish_add_path /opt/homebrew/opt/crowdin@3/bin
+fish_add_path (brew --prefix crowdin@3)/bin
 fish_add_path $HOME/.maestro/bin
 fish_add_path $HOME/.fastlane/bin
 fish_add_path $HOME/.flashlight/bin
