@@ -28,21 +28,7 @@ Do the manual install of pure Fish from the [github repo](https://github.com/pur
 ## Install tools
 
 ```sh
-brew install tmux
-brew install vim
-brew install git
-brew install diff-so-fancy
-brew install rcm
-brew install watchman
-brew install the_silver_searcher
-brew install exa
-
-brew install coreutils
-brew install curl
-brew install git
-brew install asdf
-
-brew install podman
+brew bundle
 ```
 
 ### the_silver_searcher (ag)

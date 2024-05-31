@@ -1,0 +1,28 @@
+# Shell setup
+
+## Dotfile manager
+brew "rcm"
+
+## Shell
+brew "fish"
+
+## Runtimes
+brew "asdf"
+
+## Tools
+brew "tmux"
+brew "vim"
+## Ctrl-p behaviour for vim
+brew "the_silver_searcher"
+brew "watchman"
+brew "eza"
+
+brew "coreutils"
+brew "curl"
+brew "git"
+brew "diff-so-fancy"
+brew "gh"
+
+## Media tools
+brew "ffmpeg"
+brew "imagemagick"

@@ -8,6 +8,7 @@ set -x LC_MONETARY en_US.UTF-8
 set -x LC_MESSAGES en_US.UTF-8
 
 # Applications
+set -xg HOMEBREW_BUNDLE_FILE .brewfile
 set -xg PAGER "less"
 set -xg MANPAGER "$PAGER"
 set -xg EDITOR "vim"
