@@ -3,6 +3,7 @@ alias ll "exa --long --header --git"
 alias ln "ln -v"
 
 alias list "ls"
+alias list_hidden "ls -al"
 alias listlong "ll"
 alias move "mv"
 alias copy "cp"
