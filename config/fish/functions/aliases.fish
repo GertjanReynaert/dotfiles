@@ -1,5 +1,5 @@
-alias ls "exa"
-alias ll "exa --long --header --git"
+alias ls "eza"
+alias ll "eza --long --header --git"
 alias ln "ln -v"
 
 alias list "ls"
