@@ -1,7 +1,7 @@
 # THEME PURE
 # Use this installer: https://github.com/rafaelrinaldi/pure#manually
-source /Users/gertjanreynaert/.config/fish/functions/theme-pure/conf.d/pure.fish
-set fish_function_path /Users/gertjanreynaert/.config/fish/functions/theme-pure/functions/ $fish_function_path
+source $HOME/.config/fish/functions/theme-pure/conf.d/pure.fish
+set fish_function_path $HOME/.config/fish/functions/theme-pure/functions/ $fish_function_path
 
 set pure_color_blue (set_color blue)
 set pure_color_cyan (set_color cyan)
