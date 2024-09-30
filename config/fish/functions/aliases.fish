@@ -17,6 +17,8 @@ alias e "$EDITOR"
 alias claer "clear"
 alias clera "clear"
 
+alias finder "open"
+
 alias g "git"
 
 alias b "bundle"
