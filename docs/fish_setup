@@ -1,10 +1,12 @@
 #!/usr/bin/env bash
 
-# Install fish
-brew install fish
+# Install fish (No need to run, since fish is included in brewfile
+# brew install fish
+
+FISH_PATH=(brew --prefix fish)
 
 # Register Fish as an official shell
-echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+$FISH_PATH | sudo tee -a /etc/shells
 
 # Set it as default shell
-chsh -s /usr/local/bin/fish
+chsh -s $FISH_PATH
