@@ -9,8 +9,6 @@ source (brew --prefix asdf)/libexec/asdf.fish
 source "$HOME/.asdf/plugins/java/set-java-home.fish"
 
 fish_add_path $ANDROID_HOME/emulator
-fish_add_path $ANDROID_HOME/tools
-fish_add_path $ANDROID_HOME/tools/bin
 fish_add_path $ANDROID_HOME/platform-tools
 
 fish_add_path (brew --prefix crowdin@4)/bin
