@@ -1,3 +1,5 @@
+# Docs: https://developer.1password.com/docs/ssh/agent/config/
+
 # Add my Work Github authentication key
 [[ssh-keys]]
 item = "vu7ehtozsn3oxtrq5ewcbhfvby"
