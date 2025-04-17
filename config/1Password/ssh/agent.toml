@@ -1,0 +1,19 @@
+# Add my Work Github authentication key
+[[ssh-keys]]
+item = "vu7ehtozsn3oxtrq5ewcbhfvby"
+
+# Add my Work Gitlab authentication key
+[[ssh-keys]]
+item = "jakegpao5imt53zxgyd4ovqlwe"
+
+# Add my Work Git signing key
+[[ssh-keys]]
+item="hygynpi3gkktm7zzn44yddjati"
+
+# Add my Personal Github authentication key
+[[ssh-keys]]
+item = "nru43d357lhmjd4mqd3qtmleay"
+
+# Add my Personal Git signing key
+[[ssh-keys]]
+item = "lgutxz2n5rcoeg4fh5klq6u4fy"
