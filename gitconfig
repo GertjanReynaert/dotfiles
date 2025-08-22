@@ -53,6 +53,7 @@
   cleanup = !git add -A && git commit -m '🚧 cleanup'
 
   puhs = push
+  pull-from-remote = !sh -c 'git pull origin $(git find-current-branch) --rebase'
 
   uncommit = !sh -c 'git reset HEAD~$1' -
   rs = uncommit
@@ -69,7 +70,7 @@
 
   feat = "!f() { git checkout -b feature/\"$1\" 2> /dev/null || git checkout feature/\"$1\"; }; f"
   feature = "!f() { git checkout -b feature/\"$1\" 2> /dev/null || git checkout feature/\"$1\"; }; f"
-  bug = "!f() { git checkout -b bug/\"$1\" 2> /dev/null || git checkout hotfix/\"$1\"; }; f"
+  bug = "!f() { git checkout -b bug/\"$1\" 2> /dev/null || git checkout bug/\"$1\"; }; f"
   hf = "!f() { git checkout -b hotfix/\"$1\" 2> /dev/null || git checkout hotfix/\"$1\"; }; f"
   hotfix = "!f() { git checkout -b hotfix/\"$1\" 2> /dev/null || git checkout hotfix/\"$1\"; }; f"
   dep = "!f() { git checkout -b dependencies/\"$1\" 2> /dev/null || git checkout dependencies/\"$1\"; }; f"
