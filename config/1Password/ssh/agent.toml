@@ -19,3 +19,7 @@ item = "nru43d357lhmjd4mqd3qtmleay"
 # Add my Personal Git signing key
 [[ssh-keys]]
 item = "lgutxz2n5rcoeg4fh5klq6u4fy"
+
+# Add raspberry pi ssh key
+[[ssh-keys]]
+item = "65taiq2fidkpbgqcisb2lit6ci"
