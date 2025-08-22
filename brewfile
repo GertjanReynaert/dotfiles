@@ -26,3 +26,4 @@ brew "gh"
 ## Media tools
 brew "ffmpeg"
 brew "imagemagick"
+brew "direnv"
