@@ -11,7 +11,6 @@ source "$HOME/.asdf/plugins/java/set-java-home.fish"
 fish_add_path $ANDROID_HOME/emulator
 fish_add_path $ANDROID_HOME/platform-tools
 
-fish_add_path (brew --prefix crowdin@4)/bin
 fish_add_path $HOME/.maestro/bin
 fish_add_path $HOME/.fastlane/bin
 fish_add_path $HOME/.flashlight/bin
