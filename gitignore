@@ -5,6 +5,7 @@
 .byebug_history
 .env
 .git/
+.direnv/
 /bower_components/
 /log
 /node_modules/
