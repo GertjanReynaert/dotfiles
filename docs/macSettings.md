@@ -353,12 +353,13 @@ hide
 
 Import cobalt2 color scheme
 
+### Text
+
+use different font for non-ASCII text: YES 13pt Menlo regular
+
 ## Slack colors
 
 ```
 #193549,#254155,#FFE633,#254155,#205569,#FFFFFF,#FFE633,#FDC400,#254155,#FFFFFF
 ```
 
-### Text
-
-use different font for non-ASCII text: YES 13pt Menlo regular
